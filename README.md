@@ -4,9 +4,16 @@
 
 # DrawingAvatar - AI Avatar Generator
 
-Create unique and creative avatars from your photos with the power of AI technology. This application allows you to upload your photo, select from various templates, and generate personalized avatars with simple text prompts.
+创造独属于你的国庆头像，提供了30种不同样式的模板。
+你可以根据需求进一步调整提示词，使用1:1裁剪工具快速裁剪为微信所支持的样式。
+Create unique and creative avatars from your photos with the templates and the power of AI technology. 
+This application allows you to upload your photo, select from more thank 30 templates, and generate personalized avatars with simple text prompts.
 
-View your app in AI Studio: https://ai.studio/apps/bundled/DrawingAvatar
+想要更多工具 **[Get XHS tools→](https://tools.pjcmice.com)**
+个人站点    **[Blog & Me→](https://www.pjcmice.com)**
+   
+
+View your app in AI Studio: https://aistudio.google.com/apps/drive/1cyu10UNh0V-Vn12NIkPrCld4mYLzAsqo
 
 ## Features
 - Easy photo upload
