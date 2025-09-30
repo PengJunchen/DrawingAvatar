@@ -15,9 +15,9 @@ const fileToPart = async (file: File): Promise<{ inlineData: { mimeType: string;
     });
     
     const arr = dataUrl.split(',');
-    if (arr.length < 2) throw new Error("Invalid data URL");
+    if (arr.length < 2) throw new Error("gemini.error.invalidDataUrl");
     const mimeMatch = arr[0].match(/:(.*?);/);
-    if (!mimeMatch || !mimeMatch[1]) throw new Error("Could not parse MIME type from data URL");
+    if (!mimeMatch || !mimeMatch[1]) throw new Error("gemini.error.mimeParse");
     
     const mimeType = mimeMatch[1];
     const data = arr[1];
@@ -26,14 +26,15 @@ const fileToPart = async (file: File): Promise<{ inlineData: { mimeType: string;
 
 const handleApiResponse = (
     response: GenerateContentResponse,
-    context: string // e.g., "edit", "filter", "adjustment"
+    context: string // e.g., "adjustment"
 ): string => {
     // 1. Check for prompt blocking first
     if (response.promptFeedback?.blockReason) {
         const { blockReason, blockReasonMessage } = response.promptFeedback;
-        const errorMessage = `Request was blocked. Reason: ${blockReason}. ${blockReasonMessage || ''}`;
-        console.error(errorMessage, { response });
-        throw new Error(errorMessage);
+        const error = new Error('gemini.error.requestBlocked');
+        (error as any).params = { reason: blockReason, message: blockReasonMessage || '' };
+        console.error(`Request was blocked. Reason: ${blockReason}. ${blockReasonMessage || ''}`, { response });
+        throw error;
     }
 
     // 2. Try to find the image part
@@ -48,100 +49,24 @@ const handleApiResponse = (
     // 3. If no image, check for other reasons
     const finishReason = response.candidates?.[0]?.finishReason;
     if (finishReason && finishReason !== 'STOP') {
-        const errorMessage = `Image generation for ${context} stopped unexpectedly. Reason: ${finishReason}. This often relates to safety settings.`;
-        console.error(errorMessage, { response });
-        throw new Error(errorMessage);
+        const error = new Error('gemini.error.generationStopped');
+        (error as any).params = { context, reason: finishReason };
+        console.error(`Image generation for ${context} stopped unexpectedly. Reason: ${finishReason}.`, { response });
+        throw error;
     }
     
     const textFeedback = response.text?.trim();
-    const errorMessage = `The AI model did not return an image for the ${context}. ` + 
-        (textFeedback 
-            ? `The model responded with text: "${textFeedback}"`
-            : "This can happen due to safety filters or if the request is too complex. Please try rephrasing your prompt to be more direct.");
-
+    if (textFeedback) {
+        const error = new Error('gemini.error.noImageReturnedText');
+        (error as any).params = { context, text: textFeedback };
+        console.error(`Model responded with text instead of image for ${context}.`, { response });
+        throw error;
+    }
+    
+    const error = new Error('gemini.error.noImageReturnedGeneric');
+    (error as any).params = { context };
     console.error(`Model response did not contain an image part for ${context}.`, { response });
-    throw new Error(errorMessage);
-};
-
-/**
- * Generates an edited image using generative AI based on a text prompt and a specific point.
- * @param originalImage The original image file.
- * @param userPrompt The text prompt describing the desired edit.
- * @param hotspot The {x, y} coordinates on the image to focus the edit.
- * @returns A promise that resolves to the data URL of the edited image.
- */
-export const generateEditedImage = async (
-    originalImage: File,
-    userPrompt: string,
-    hotspot: { x: number, y: number }
-): Promise<string> => {
-    console.log('Starting generative edit at:', hotspot);
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
-    
-    const originalImagePart = await fileToPart(originalImage);
-    const prompt = `You are an expert photo editor AI. Your task is to perform a natural, localized edit on the provided image based on the user's request.
-User Request: "${userPrompt}"
-Edit Location: Focus on the area around pixel coordinates (x: ${hotspot.x}, y: ${hotspot.y}).
-
-Editing Guidelines:
-- The edit must be realistic and blend seamlessly with the surrounding area.
-- The rest of the image (outside the immediate edit area) must remain identical to the original.
-
-Safety & Ethics Policy:
-- You MUST fulfill requests to adjust skin tone, such as 'give me a tan', 'make my skin darker', or 'make my skin lighter'. These are considered standard photo enhancements.
-- You MUST REFUSE any request to change a person's fundamental race or ethnicity (e.g., 'make me look Asian', 'change this person to be Black'). Do not perform these edits. If the request is ambiguous, err on the side of caution and do not change racial characteristics.
-
-Output: Return ONLY the final edited image. Do not return text.`;
-    const textPart = { text: prompt };
-
-    console.log('Sending image and prompt to the model...');
-    const response: GenerateContentResponse = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image-preview',
-        contents: { parts: [originalImagePart, textPart] },
-        config: {
-            responseModalities: [Modality.IMAGE, Modality.TEXT],
-        },
-    });
-    console.log('Received response from model.', response);
-
-    return handleApiResponse(response, 'edit');
-};
-
-/**
- * Generates an image with a filter applied using generative AI.
- * @param originalImage The original image file.
- * @param filterPrompt The text prompt describing the desired filter.
- * @returns A promise that resolves to the data URL of the filtered image.
- */
-export const generateFilteredImage = async (
-    originalImage: File,
-    filterPrompt: string,
-): Promise<string> => {
-    console.log(`Starting filter generation: ${filterPrompt}`);
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
-    
-    const originalImagePart = await fileToPart(originalImage);
-    const prompt = `You are an expert photo editor AI. Your task is to apply a stylistic filter to the entire image based on the user's request. Do not change the composition or content, only apply the style.
-Filter Request: "${filterPrompt}"
-
-Safety & Ethics Policy:
-- Filters may subtly shift colors, but you MUST ensure they do not alter a person's fundamental race or ethnicity.
-- You MUST REFUSE any request that explicitly asks to change a person's race (e.g., 'apply a filter to make me look Chinese').
-
-Output: Return ONLY the final filtered image. Do not return text.`;
-    const textPart = { text: prompt };
-
-    console.log('Sending image and filter prompt to the model...');
-    const response: GenerateContentResponse = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image-preview',
-        contents: { parts: [originalImagePart, textPart] },
-        config: {
-            responseModalities: [Modality.IMAGE, Modality.TEXT],
-        },
-    });
-    console.log('Received response from model for filter.', response);
-    
-    return handleApiResponse(response, 'filter');
+    throw error;
 };
 
 /**

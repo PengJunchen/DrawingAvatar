@@ -99,6 +99,206 @@
         "zh": "京剧武生靠旗改造为4面小国旗（每面30×20cm），头盔绒球替换为红色毛球与金色五角星，面部保留京剧脸谱（红色忠义脸），背景为京剧舞台与现代LED屏结合，人物亮相姿势，戏曲漫画风格。",
         "en": "Peking opera flags replaced with 4 small flags (30×20cm each). Helmet pompom becomes red with gold star. Red \"loyalty\" face paint retained. Background blends opera stage with LED screens. Person in dramatic pose, opera-comic style."
       }
+    },
+    {
+      "name": {
+        "zh": "长城烽火台卫士",
+        "en": "Great Wall Sentinel"
+      },
+      "prompt": {
+        "zh": "人物站在长城烽火台上，头戴古代士兵头盔（红缨装饰），身披红色披风（绣金色龙纹），背景为层峦叠嶂的群山与初升朝阳，手持青铜剑直指苍穹，人物剪影效果，逆光拍摄形成金色轮廓。",
+        "en": "Person standing on Great Wall beacon tower wearing ancient helmet (red tassels) and red cape (gold dragon embroidery). Background shows mountain ranges with rising sun. Holding bronze sword pointing skyward, silhouette effect with golden backlighting."
+      }
+    },
+    {
+      "name": {
+        "zh": "天安门广场合影",
+        "en": "Tiananmen Square Photo"
+      },
+      "prompt": {
+        "zh": "人物位于天安门广场人民英雄纪念碑前，手持小号国旗（14×21cm标准尺寸），背景为蓝天白云下的天安门城楼（添加国庆花篮），广场地面投影\"1949-2025\"字样，人物跳跃抓拍，纪实摄影风格。",
+        "en": "Person in front of Monument to the People's Heroes holding small flag (14×21cm). Background shows Tiananmen Tower under blue sky (with floral basket). Ground projection reads \"1949-2025\". Jumping pose captured, documentary photography style."
+      }
+    },
+    {
+      "name": {
+        "zh": "国庆烟花摄影师",
+        "en": "Fireworks Photographer"
+      },
+      "prompt": {
+        "zh": "人物手持复古相机（镜头指向天空），头戴印有国旗图案的棒球帽，背景为夜空中绽放的国庆主题烟花（红/黄/金三色），相机闪光灯亮起，人物半蹲拍摄姿态，慢门摄影效果（烟花轨迹清晰）。",
+        "en": "Person holding vintage camera (pointed upward) wearing flag-patterned cap. Background shows red/yellow/gold fireworks. Camera flash on, crouching pose with slow shutter effect (clear firework trails)."
+      }
+    },
+    {
+      "name": {
+        "zh": "花海中的祝福",
+        "en": "Blessing in Flower Sea"
+      },
+      "prompt": {
+        "zh": "人物置身百万株向日葵花田（花盘均朝向人物），头戴向日葵花环（含7朵大花象征76周年），手中捧着\"欢度国庆\"绸带（红色丝绸材质），背景为远处的风力发电机与五星红旗，人物转身微笑，田园油画风格。",
+        "en": "Person in sunflower field (flowers facing person), wearing wreath with 7 large flowers (symbolizing 76 years). Holding \"Happy National Day\" silk ribbon. Background shows distant wind turbines and flag. Turning with smile, pastoral oil painting style."
+      }
+    },
+    {
+      "name": {
+        "zh": "红绸舞动态抓拍",
+        "en": "Red Silk Dance Shot"
+      },
+      "prompt": {
+        "zh": "人物挥舞7米长红绸（末端印有金色祥云），身着红色练功服，背景为旋转的金色灯笼阵（36盏），红绸在空中形成\"76\"字样，人物跳跃腾空，慢动作捕捉绸带飘动轨迹，中国传统舞美风格。",
+        "en": "Person waving 7m red silk (gold cloud patterns) in red practice clothes. Background shows 36 rotating golden lanterns. Silk forms \"76\" in air. Jumping pose with slow-motion silk movement, traditional Chinese dance style."
+      }
+    },
+    {
+      "name": {
+        "zh": "剪纸艺术头像",
+        "en": "Paper-cut Portrait"
+      },
+      "prompt": {
+        "zh": "将人物头像转换为多层剪纸风格，最外层为红色五角星轮廓（镂空），中层为天安门剪影，内层为人物面部，背景为金色祥云底纹，整体采用\"红金黑\"三色，中国传统剪纸工艺风格（锯齿纹/月牙纹细节）。",
+        "en": "Layered paper-cut portrait: outer red star (cut-out), middle Tiananmen silhouette, inner face. Gold cloud background. \"Red-gold-black\" color scheme with traditional cut-out details (sawtooth/crescent patterns)."
+      }
+    },
+    {
+      "name": {
+        "zh": "像素艺术76周年",
+        "en": "Pixel Art 76th Anniversary"
+      },
+      "prompt": {
+        "zh": "人物头像像素化处理（8-bit风格），头部替换为像素化五角星，身体穿着像素国旗图案T恤，背景为像素化长城与数字\"76\"，整体尺寸256×256像素，复古游戏机画面风格（含扫描线效果）。",
+        "en": "8-bit pixel art: head replaced with pixel star, wearing flag-pattern pixel T-shirt. Pixel Great Wall and \"76\" in background. 256×256 resolution with CRT scanline effects."
+      }
+    },
+    {
+      "name": {
+        "zh": "水墨丹青国庆",
+        "en": "Ink Painting Portrait"
+      },
+      "prompt": {
+        "zh": "人物头像转换为水墨写意风格，面部用淡墨勾勒，头发渲染为红色渐变（象征红旗），背景为泼墨山水与留白处的\"国庆\"二字（行草书法），右下角盖\"中华\"朱文印章，传统水墨画风格。",
+        "en": "Ink-wash portrait: light ink face outline, red gradient hair (symbolizing flag). Splashed-ink landscape with \"National Day\" calligraphy. \"China\" seal in red at bottom right."
+      }
+    },
+    {
+      "name": {
+        "zh": "蒸汽波国庆混搭",
+        "en": "Vaporwave Fusion"
+      },
+      "prompt": {
+        "zh": "人物头像融合蒸汽波元素，面部轮廓保留，背景为红蓝渐变的天安门倒置影像，叠加网格线与\"1949-2025\"霓虹字样，人物佩戴复古墨镜（镜片反射国旗），蒸汽波艺术特有的故障艺术效果。",
+        "en": "Vaporwave portrait with retained face outline. Inverted Tiananmen in red-blue gradient with grid and neon \"1949-2025\". Retro sunglasses reflect flag. Glitch art effects."
+      }
+    },
+    {
+      "name": {
+        "zh": "极简主义符号",
+        "en": "Minimalist Symbol"
+      },
+      "prompt": {
+        "zh": "极端简化的国庆头像，仅保留人物面部轮廓线，背景为纯红色（Pantone 186C），右上角放置金色五角星（无衬线轮廓），整体采用\"红金\"两色，线条粗细严格遵循黄金比例，极简主义设计风格。",
+        "en": "Minimalist portrait: only face outline remains. Solid red (Pantone 186C) background with gold star (sans-serif) top right. \"Red-gold\" scheme with golden ratio line weights."
+      }
+    },
+    {
+      "name": {
+        "zh": "AR国旗投影",
+        "en": "AR Flag Projection"
+      },
+      "prompt": {
+        "zh": "人物佩戴智能眼镜，镜片投射动态国旗图案（随风飘动效果），眼镜边框镶嵌微型LED灯（红黄交替闪烁），背景为城市夜景与AR叠加的全息\"76\"字样，人物抬手调整眼镜，科技产品宣传照风格。",
+        "en": "AR glasses projecting animated flag (waving effect). Frame LEDs alternate red/yellow. City nightscape with holographic \"76\". Person adjusting glasses, tech promo style."
+      }
+    },
+    {
+      "name": {
+        "zh": "无人机编队背景",
+        "en": "Drone Formation Background"
+      },
+      "prompt": {
+        "zh": "人物站在屋顶，头顶上方无人机群组成动态五角星阵列（500架无人机），背景为深蓝色夜空与城市灯光，人物指向天空，长曝光拍摄（无人机轨迹形成光带），科技新闻摄影风格。",
+        "en": "Person on rooftop with 500 drones forming star formation above. Deep blue night sky with city lights. Pointing upward, long exposure showing drone light trails, tech journalism style."
+      }
+    },
+    {
+      "name": {
+        "zh": "全息投影皇冠",
+        "en": "Holographic Crown"
+      },
+      "prompt": {
+        "zh": "人物头部悬浮全息投影皇冠（半透明蓝色），由100个微型五角星组成动态旋转结构，背景为全息投影的人民大会堂穹顶，人物面部有蓝色光效反射，科幻电影海报风格。",
+        "en": "Holographic blue crown floating above head (100 rotating mini stars). Background shows Great Hall dome projection. Blue light reflections on face, sci-fi movie poster style."
+      }
+    },
+    {
+      "name": {
+        "zh": "国庆主题机械臂",
+        "en": "National Day Prosthetic Arm"
+      },
+      "prompt": {
+        "zh": "人物右臂替换为机械义肢，关节处有五角星装饰，手掌可投射\"国庆快乐\"激光文字，背景为工业流水线与飘扬的国旗，人物握拳姿态（机械臂发光），赛博朋克插画风格。",
+        "en": "Right arm replaced with mechanical prosthetic (star-decorated joints). Palm projects \"Happy National Day\" laser text. Factory assembly line with waving flags in background. Fist pose with glowing arm, cyberpunk illustration."
+      }
+    },
+    {
+      "name": {
+        "zh": "VR国庆体验",
+        "en": "VR National Day Experience"
+      },
+      "prompt": {
+        "zh": "人物佩戴VR眼镜，镜片显示虚拟天安门场景，头显侧面印有\"76\"字样，背景为现实中的房间与虚拟场景的双重曝光效果，人物伸手触摸虚拟国旗，超现实主义摄影风格。",
+        "en": "VR headset showing virtual Tiananmen scene. \"76\" printed on headset. Double exposure of real room and virtual scene. Reaching to touch virtual flag, surrealist photography."
+      }
+    },
+    {
+      "name": {
+        "zh": "生肖蛇国庆融合",
+        "en": "Snake Year Fusion"
+      },
+      "prompt": {
+        "zh": "2025蛇年主题，人物头戴蛇形头饰（金色鳞片材质），蛇身缠绕红色绸带（绣\"国庆\"字样），蛇头顶部有迷你国旗，背景为桂林山水与蛇形祥云纹，工笔花鸟画风格。",
+        "en": "2025 Snake Year theme: golden snake headdress with red silk (embroidered \"National Day\"). Mini flag on snake head. Guilin landscape with snake-shaped clouds, meticulous flower-bird painting style."
+      }
+    },
+    {
+      "name": {
+        "zh": "传统灯笼头像",
+        "en": "Traditional Lantern Portrait"
+      },
+      "prompt": {
+        "zh": "人物头部替换为宫灯造型，灯罩为红色磨砂玻璃（印金色五角星），灯穗为黄色流苏（长15cm），内部LED光源形成暖黄色光晕，背景为胡同夜景与红灯笼串，民俗摄影风格。",
+        "en": "Head replaced with palace lantern: frosted red glass (gold stars), 15cm yellow tassels. Warm LED glow inside. Hutong nightscape with lantern strings, folk photography style."
+      }
+    },
+    {
+      "name": {
+        "zh": "书法文字头像",
+        "en": "Calligraphy Portrait"
+      },
+      "prompt": {
+        "zh": "人物面部轮廓保留，背景为巨大的\"国\"字行草书法（笔锋处有红色墨迹飞溅效果），右上角小尺寸\"庆\"字（楷书），人物额头贴金色\"福\"字剪纸，书法艺术与肖像融合风格。",
+        "en": "Face outline retained. Huge cursive \"Nation\" character (ink splatter effects) with small regular script \"Celebration\" top right. Gold \"Fortune\" paper-cut on forehead, calligraphy-portrait fusion."
+      }
+    },
+    {
+      "name": {
+        "zh": "敦煌飞天国庆版",
+        "en": "Dunhuang Apsaras Edition"
+      },
+      "prompt": {
+        "zh": "人物化为敦煌飞天造型，飘带改为红黄渐变（国旗色），手中托盘盛放五角星与\"76\"字样，背景为莫高窟壁画风格的祥云与飞天群像，传统壁画数字化风格。",
+        "en": "Dunhuang flying apsaras in flag-colored ribbons. Holding tray with stars and \"76\". Mogao Cave-style clouds and apsaras in background, digitized mural style."
+      }
+    },
+    {
+      "name": {
+        "zh": "民族团结头饰",
+        "en": "Ethnic Unity Headdress"
+      },
+      "prompt": {
+        "zh": "人物头戴56个民族元素组成的头饰，主体为汉族的红绸结、藏族的金顶、维吾尔族的花帽等融合设计，顶部矗立微型华表，背景为56条不同颜色的彩带组成的圆环，民族大团结主题插画风格。",
+        "en": "Headdress combining 56 ethnic elements: Han red silk, Tibetan golden top, Uyghur floral cap etc. Mini marble pillar on top. Background shows 56 colored ribbons in circle, ethnic unity illustration."
+      }
     }
   ]
 }
