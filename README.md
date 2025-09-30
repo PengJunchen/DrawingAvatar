@@ -9,11 +9,17 @@
 Create unique and creative avatars from your photos with the templates and the power of AI technology. 
 This application allows you to upload your photo, select from more thank 30 templates, and generate personalized avatars with simple text prompts.
 
+---
+
 想要更多工具 **[Get XHS tools→](https://tools.pjcmice.com)**
+
+
 个人站点    **[Blog & Me→](https://www.pjcmice.com)**
    
 
-View your app in AI Studio: https://aistudio.google.com/apps/drive/1cyu10UNh0V-Vn12NIkPrCld4mYLzAsqo
+直接使用应用: **[谷歌可登录免费用 无需API KEY](https://aistudio.google.com/apps/drive/1cyu10UNh0V-Vn12NIkPrCld4mYLzAsqo)**
+
+---
 
 ## Features
 - Easy photo upload
