@@ -1,0 +1,104 @@
+{
+  "templates": [
+    {
+      "name": {
+        "zh": "五星荣耀皇冠",
+        "en": "Golden Star Crown"
+      },
+      "prompt": {
+        "zh": "将人物头部替换为国庆主题皇冠，主体为3D立体金色五角星（直径5cm），中心镶嵌红色宝石（Pantone 186C），帽檐环绕\"76周年\"立体字样（钛金字体），背景为天安门城楼与金色烟花（每3秒绽放一次），保持人物微笑表情，光照从左上方45度角射入，中国风工笔画风格。",
+        "en": "Replace the head with a National Day crown featuring a 3D golden star (5cm diameter) with red gemstone (Pantone 186C) at center. The brim has \"76th Anniversary\" in titanium gold relief. Background shows Tiananmen Tower with golden fireworks (bursting every 3 seconds). Keep smiling expression with 45-degree lighting from top left, in traditional Chinese painting style."
+      }
+    },
+    {
+      "name": {
+        "zh": "军威勋章贝雷帽",
+        "en": "Military Medal Beret"
+      },
+      "prompt": {
+        "zh": "人物佩戴墨绿色贝雷帽，帽徽为金色八一军徽与五角星组合，帽檐处斜挂三枚军功章（独立自由勋章/解放勋章/红星勋章），背景为阅兵方阵剪影（正步走队列），人物眼神坚定，侧光拍摄突显面部轮廓，写实主义风格。",
+        "en": "Person wearing dark green beret with golden PLA emblem and star badge. Three medals (Independence/ Liberation/ Red Star) hang on brim. Background shows military parade formation in goose-step. Determined gaze with side lighting emphasizing facial contours, in realistic style."
+      }
+    },
+    {
+      "name": {
+        "zh": "祥云瑞气乌纱帽",
+        "en": "Auspicious Cloud Hat"
+      },
+      "prompt": {
+        "zh": "传统乌纱帽改造设计，帽翅加长至15cm并装饰红色祥云纹（刺绣工艺），帽顶镶嵌金色党徽，帽檐下垂红色流苏（含56条细线象征民族团结），背景为故宫太和殿屋檐，人物作揖姿态，水墨淡彩风格。",
+        "en": "Modified traditional black gauze hat with 15cm wings featuring red cloud patterns (embroidery). Golden Party emblem on top, red tassels with 56 strands (symbolizing ethnic unity) hanging from brim. Background shows Hall of Supreme Harmony roof. Person in bowing pose, ink-wash painting style."
+      }
+    },
+    {
+      "name": {
+        "zh": "未来科技国庆盔",
+        "en": "Future Tech Helmet"
+      },
+      "prompt": {
+        "zh": "赛博朋克风格头盔，主体为哑光黑色碳纤维材质，面罩显示动态五角星全息投影，两侧各3盏LED国庆彩灯（红黄交替闪烁），背景为悬浮的东方明珠塔与无人机矩阵组成的\"76\"字样，人物侧身45度，霓虹光影效果。",
+        "en": "Cyberpunk-style helmet in matte black carbon fiber. Visor shows holographic star projection, with 3 LED lights on each side (red/yellow alternating). Background features floating Oriental Pearl Tower with drone-formed \"76\". Person at 45-degree angle with neon lighting effects."
+      }
+    },
+    {
+      "name": {
+        "zh": "农耕文化斗笠",
+        "en": "Farming Culture Hat"
+      },
+      "prompt": {
+        "zh": "竹编斗笠外沿包裹红绸带（宽3cm），顶部装饰金色麦穗环绕五角星，斗笠内侧印\"五谷丰登\"篆体字，背景为金色稻田与风力发电机群，人物手持稻穗，逆光拍摄形成金色轮廓，乡土写实风格。",
+        "en": "Bamboo hat wrapped with 3cm red silk ribbon. Golden wheat ears circling star on top, seal script \"Bumper Harvest\" inside. Background shows golden rice fields with wind turbines. Person holding rice ears, backlit for golden outline, in rustic realistic style."
+      }
+    },
+    {
+      "name": {
+        "zh": "唐装国旗元素改造",
+        "en": "Tang Suit with Flag Elements"
+      },
+      "prompt": {
+        "zh": "人物穿着改良唐装，立领处绣五角星暗纹（金线），盘扣替换为微型国旗造型（3:2比例），袖口滚边采用红黄渐变织带，背景为苏州园林月洞门与红枫，人物手持折扇（扇面绘长城），工笔重彩风格。",
+        "en": "Modified Tang suit with star patterns (gold thread) on collar. Frog buttons replaced with mini flags (3:2 ratio). Cuffs have red-yellow gradient trim. Background shows Suzhou garden moon gate with red maples. Person holding fan painted with Great Wall, in meticulous painting style."
+      }
+    },
+    {
+      "name": {
+        "zh": "赛博汉服混搭",
+        "en": "Cyber Hanfu Fusion"
+      },
+      "prompt": {
+        "zh": "明制汉服与科技元素结合，交领右衽处装饰LED灯带（红色常亮），腰间悬挂\"国庆节\"金属腰牌（青铜做旧工艺），背景为未来感城市天际线与古代宫墙融合，人物抬手作揖，蒸汽波艺术风格。",
+        "en": "Ming-style hanfu with tech elements: LED strips (red) on lapel, bronze \"National Day\" waist tag. Background blends futuristic skyline with ancient palace walls. Person bowing with raised hands, in vaporwave art style."
+      }
+    },
+    {
+      "name": {
+        "zh": "工装风国庆夹克",
+        "en": "Workwear Jacket"
+      },
+      "prompt": {
+        "zh": "深蓝色工装夹克胸前印\"我爱我的祖国\"涂鸦字体（红黄渐变），左臂绣国旗图案（严格3:2比例），口袋外挂红色帆布包（印金色\"76\"），背景为工业风集装箱墙与飘扬的红旗，人物插兜站姿，街头潮牌风格。",
+        "en": "Navy work jacket with \"I Love My Country\" graffiti (red-yellow gradient) on chest. Left sleeve has flag (strict 3:2 ratio). Red canvas bag with \"76\" hangs from pocket. Background shows industrial containers with waving flags. Person standing hands in pockets, streetwear style."
+      }
+    },
+    {
+      "name": {
+        "zh": "航天主题宇航服",
+        "en": "Space Themed Suit"
+      },
+      "prompt": {
+        "zh": "白色宇航服头盔面罩反射国旗图案，胸前NASA标志替换为\"中国航天\"与五角星组合，左臂印\"国庆76周年\"字样，背景为太空视角下的地球与中国空间站，人物漂浮姿态，科幻写实风格。",
+        "en": "White spacesuit helmet reflects flag pattern. NASA logo replaced with \"China Space\" and star. Left arm has \"76th Anniversary\". Background shows Earth from space with Chinese space station. Person floating, sci-fi realistic style."
+      }
+    },
+    {
+      "name": {
+        "zh": "传统戏服创新",
+        "en": "Innovative Opera Costume"
+      },
+      "prompt": {
+        "zh": "京剧武生靠旗改造为4面小国旗（每面30×20cm），头盔绒球替换为红色毛球与金色五角星，面部保留京剧脸谱（红色忠义脸），背景为京剧舞台与现代LED屏结合，人物亮相姿势，戏曲漫画风格。",
+        "en": "Peking opera flags replaced with 4 small flags (30×20cm each). Helmet pompom becomes red with gold star. Red \"loyalty\" face paint retained. Background blends opera stage with LED screens. Person in dramatic pose, opera-comic style."
+      }
+    }
+  ]
+}
